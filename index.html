@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Validator</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+<div id="hero"  class="text-center">
+  <video autoplay loop poster="images/escalator.png" id="bgvid">
+    <source src="images/escalatorbw.mp4" type="video/mp4">
+  </video>
+  <div class="content">
+    <h1>Hi, I'm Ching</h1>
+    <a href="#tag"><h5>When can we start?</h5></a>
+  </div>
+</div>
+
+<div id="tag" class="text-center">
+  <div class="content">
+    <h2>I’m impatient for action<br/> when revealing and delivering customer desires.</h2>
+    <p>Whether it’s launching a high-end interior design boutique in West Hollywood,<br/>
+      or developing the proof-of-concept rails app for a menswear startup in DTLA, <br/>
+      I dive deep and deliver on the very first day. </p>
+    <a href="#motives"><button class="btn">My Motivators</button></a>
+  </div>
+</div>
+
+<div id="motives">
+  <div class="content">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Bias for Action</h2>
+        <p>The quickest way to get from A to B is to start moving now. Armed with experience, expert advice, and sometimes naive self-assurance, I make decisions to act today.</p>
+      </div>
+      <div class="col-sm-6">
+        <h2>Teachability</h2>
+        <p>I’m always excited to acknowledge when I need your help. Hungry for collaboration, I seek out and learn from the best and the brightest.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Adaptability</h2>
+        <p>Energized with surprises, I welcome sudden detours that take us to novel goals. I live in the moment, with just the right amount of planning and preparation to reach our destination.</p>
+      </div>
+      <div class="col-sm-6">
+        <h2>Forward-Thinking</h2>
+        <p>The future is fascinating. My specific, vivid dreams are a form of planning. Let’s build it together.</p>
+      </div>
+    </div>
+    <div class="text-center">
+    <a href="#comps"><button class="btn">My Competencies</button></a>
+    </div>
+  </div>
+</div>
+
+<div id="comps">
+  <div class="content">
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Web Development</h2>
+        <p>I developed proof-of-concept apps with Ruby on Rails hosted on Heroku for rapid prototypes. My most recent dashboard application earned $200k from angel investors.</p>
+      </div>
+      <div class="col-sm-6">
+        <h2>Client Relations</h2>
+        <p>At the core of my client relationship is authenticity. As account manager for a startup's first month of service, I earned $40k in revenue.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-6">
+        <h2>Retail Operations</h2>
+        <p>I know what it means to hit the ground running. I opened and operated a high-end interior design boutique as the sole employee for its first year of business.</p>
+      </div>
+      <div class="col-sm-6">
+        <h2>Marketing Research</h2>
+        <p>In the coming year, I will be working with alltech on a marketing research project that will add relevant value to current operations. More to come soon.</p>
+      </div>
+    </div>
+    <div class="text-center">
+    <a href="#contact"><button class="btn">Let's Talk</button></a>
+    </div>
+  </div>
+</div>
+
+<div id="contact" class="text-center">
+  <div class="content">
+    <h2>I'm currently pursuing my M.B.A.<br/>
+      and excited to work with you in 2017</h2>
+    <div class="row">
+      <div class="col-xs-6">
+        <a href="downloads/resumedigmkt.pdf"><button class="text-center btn">Resume</button></a>
+      </div>
+      <div class="col-xs-6">
+        <a href="https://www.linkedin.com/in/casanovatapia" target="_blank"><button class="text-center btn">LinkedIn</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+
+<script>
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+  });
+</script>
+
+</body>
+</html>
