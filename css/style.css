@@ -97,22 +97,23 @@ video#bgvid {
 }
 #tag {
   margin-top: -10px;
-  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.60));
+  background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
+  color: #333;
 }
 .tag-text {
   margin-bottom: 10vh!important;
 }
 #motives {
-  background: linear-gradient(rgba(0, 0, 0, 0.98), rgba(0, 0, 0, 0.98));
+  background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98));
 }
 #comps {
-  background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.90));
+  background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.98));
 }
 #contact, #footer {
   background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
   color: #333;
 }
-.btn-contact {
+.btn-white {
   border: 2.5px solid #333;
 }
 .img-contact {
