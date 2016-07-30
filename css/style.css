@@ -11,6 +11,11 @@ h1   { font-size: 36px; font-size: 3.6rem; }
 .oswald { text-transform: uppercase; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 48px; font-size: 4.8rem; }
 .big { font-size: 48px; font-size: 4.8rem; line-height: 60px;}
 .xsmall { font-size: 75%; }
+
+@media only screen and (max-width: 414px) {
+  body { font-size: 28px; font-size: 2.8rem; letter-spacing: .1rem; line-height: 42px; line-height: 4.2rem; }
+  .oswald { font-size: 50px; font-size: 5rem; }
+}
 /* END Fonts */
 
 /* Links */
@@ -76,7 +81,7 @@ video#bgvid {
     transition: 1s opacity;
 }
 .stopfade { opacity: .5; }
-@media screen and (max-device-width: 800px) {
+@media only screen and (max-device-width: 800px) {
     html {
          background: url(polina.jpg) #000 no-repeat center center fixed;
     }
@@ -89,6 +94,19 @@ video#bgvid {
 /* Full height */
 #hero, #contact {
   min-height: 90vh;
+}
+@media only screen and (max-width: 414px) {
+  #hero a:hover,
+  #hero a:focus,
+  #hero a:active,
+  #hero a.active {
+    color: #555;
+    text-decoration: none;
+  }
+
+  #hero, #contact {
+    min-height: 0;
+  }
 }
 /* END Full height */
 
@@ -103,15 +121,37 @@ video#bgvid {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.70));
 }
+
+@media only screen and (max-width: 768px) {
+  #hero {
+    background-color: #FF69B4;
+  }
+}
+
 .hero-hi {
   display: block;
   margin: auto;
   padding-top: 200px;
   max-width: 400px;
 }
+
 .call {
   margin-top: 100px;
 }
+
+@media only screen and (max-width: 414px) {
+  .hero-hi {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .call {
+    margin-top: 50px;
+    padding-bottom: 200px;
+  }
+}
+
 #video, .message {
   position: absolute; top: 0; left: 0;
 }
@@ -123,13 +163,13 @@ video#bgvid {
   padding-top: 200px;
   padding-bottom: 200px;
 }
-@media (min-width: 415px) and (max-width: 900px) {
+@media only screen and (min-width: 415px) and (max-width: 900px) {
   #tag, #motives, #comps {
     padding-top: 100px;
     padding-bottom: 100px;
   }
 }
-@media (max-width: 414px) {
+@media only screen and (max-width: 414px) {
   #tag, #motives, #comps {
     padding-top: 50px;
     padding-bottom: 50px;
@@ -173,9 +213,15 @@ video#bgvid {
   transition:.5s;
   cursor: default;
 }
-@media screen and (max-device-width: 790px) {
+@media only screen and (max-width: 800px) {
   .box {
     padding: 2vh !important;
+  }
+}
+
+@media only screen and (max-width: 414px) {
+  .box p {
+    margin-bottom: 50px;
   }
 }
 /* END Tag Section */
@@ -214,4 +260,9 @@ video#bgvid {
 #footer {
   height: 50px;
   padding: 0;
+}
+@media only screen and (max-width: 414px) {
+  #footer {
+    display: none;
+  }
 }
