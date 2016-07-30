@@ -1,25 +1,35 @@
 body {
-  color: #fff;
-  font-family: 'Nunito', sans-serif;
-}
-p {
-  line-height: 1.5;
-  font-size: 120%;
-  letter-spacing: 1px;
+  height: 100%;
 }
 
+/* Fonts */
+html { font-size: 62.5%; }
+body { font-size: 22px; font-size: 2.2rem; letter-spacing: .1rem; line-height: 34px; line-height: 3.4rem; font-weight: 300; font-family: 'Oswald', sans-serif; color: #fff; }
+h1   { font-size: 36px; font-size: 3.6rem; }
+
+.montserrat { font-size: 18px; font-size: 1.8rem; text-transform: uppercase; font-family: 'Montserrat', sans-serif; letter-spacing: 8px; letter-spacing: .8rem; }
+.oswald { text-transform: uppercase; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 48px; font-size: 4.8rem; }
+.big { font-size: 48px; font-size: 4.8rem; line-height: 60px;}
+.xsmall { font-size: 75%; }
+/* END Fonts */
+
+/* Links */
 .btn {
   border-radius: 0;
   background-color: transparent;
   border: 2.5px solid #fff;
   text-transform: uppercase;
   letter-spacing: 3px;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 5px;
+  letter-spacing: .5rem;
   margin: 10vh auto;
 }
+
 a {
   color: inherit;
 }
+
 a:hover,
 a:focus,
 a:active,
@@ -27,6 +37,7 @@ a.active {
   color: #FF69B4;
   text-decoration: none;
 }
+
 .btn:hover,
 .btn:focus,
 .btn:active {
@@ -34,17 +45,17 @@ a.active {
   border-color: #FF69B4;
   color: #fff;
 }
-
-h4, .h4 {
-  text-transform: uppercase;
-  font-size: 95%;
-  letter-spacing: 4px;
-  line-height: 1.5;
-  margin-top: 15vh;
-  font-weight: bold;
+.btn-white {
+  border: 2.5px solid #333;
 }
+.btn-wide {
+  min-width: 150px;
+}
+/* END Btn */
 
 
+
+/* Background video */
 video#bgvid {
     position: fixed;
     top: 50%;
@@ -73,16 +84,21 @@ video#bgvid {
         display: none;
     }
 }
+/* END Background Video */
 
-#hero, #tag, #motives, #comps, #contact {
-  min-height: 100vh;
+/* Full height */
+#hero, #contact {
+  min-height: 90vh;
 }
+/* END Full height */
+
 .content {
-  padding-top: 20vh;
-  max-width: 800px;
+  max-width: 900px;
   display: block;
   margin: 0 auto;
 }
+
+/* Hero */
 #hero {
   position: relative;
   background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.70));
@@ -90,31 +106,102 @@ video#bgvid {
 .hero-hi {
   display: block;
   margin: auto;
+  padding-top: 200px;
   max-width: 400px;
+}
+.call {
+  margin-top: 100px;
 }
 #video, .message {
   position: absolute; top: 0; left: 0;
 }
-#tag {
+/* END Hero */
+
+/* Top and Bottom Padding */
+#tag, #motives, #comps {
   margin-top: -10px;
+  padding-top: 200px;
+  padding-bottom: 200px;
+}
+@media (min-width: 415px) and (max-width: 900px) {
+  #tag, #motives, #comps {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+@media (max-width: 414px) {
+  #tag, #motives, #comps {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+/* END Top and Bottom Padding */
+
+/* Tag Section */
+#tag {
   background: linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8));
   color: #333;
 }
 .tag-text {
   margin-bottom: 10vh!important;
 }
+/* END Tag Section */
+
+/* Motives Section */
 #motives {
   background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.98));
 }
+#motives h1 {
+  margin-bottom: 150px;
+}
+.box {
+  height: 50%;
+  font-size: 90%;
+  padding: 5vh !important;
+}
+.box:hover,
+.box:focus,
+.box:active,
+.box.active {
+  color: #fff;
+  background-color: #FF69B4;
+  text-decoration: none;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition:.5s;
+  cursor: default;
+}
+@media screen and (max-device-width: 790px) {
+  .box {
+    padding: 2vh !important;
+  }
+}
+/* END Tag Section */
+
+/* Comps Section */
 #comps {
   background: linear-gradient(rgba(0, 0, 0, 0.90), rgba(0, 0, 0, 0.98));
+  margin-top: -25px;
 }
+#comps h1 {
+  margin-bottom: 100px;
+}
+
+.skill {
+  margin-bottom: 100px;
+  max-width: 500px;
+  margin-right: 0;
+  margin-left: auto;
+}
+/* END Comps Section */
+
+/* Contact Section */
 #contact, #footer {
   background: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95));
   color: #333;
-}
-.btn-white {
-  border: 2.5px solid #333;
+  padding-top: 200px;
 }
 .img-contact {
   display: block;
@@ -122,7 +209,9 @@ video#bgvid {
   margin-bottom: -5vh;
   max-width: 300px;
 }
+/* END Contact Section */
 
 #footer {
   height: 50px;
+  padding: 0;
 }
