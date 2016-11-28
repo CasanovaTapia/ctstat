@@ -1,0 +1,92 @@
+html, body {
+  height: 100%;
+}
+
+html { font-size: 62.5%; }
+body { font-size: 22px; font-size: 2.2rem; letter-spacing: .1rem; line-height: 34px; line-height: 3.4rem; font-weight: 300; font-family: 'Oswald', sans-serif; color: #fff; }
+h1   { font-size: 100px; font-size: 10.0rem; }
+
+.montserrat { font-size: 18px; font-size: 1.8rem; text-transform: uppercase; font-family: 'Montserrat', sans-serif; letter-spacing: 8px; letter-spacing: .8rem; }
+.oswald { text-transform: uppercase; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 48px; font-size: 4.8rem; }
+
+
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.emoji {
+	width: 100%;
+	height: auto;
+	display: block;
+	margin: auto;
+}
+
+.full {
+	min-height: 100%;
+	padding: 15px;
+}
+
+.next {
+	margin-top: 20px;
+}
+
+#top {
+	background-color: #8e44ad;
+}
+#top a {
+	color: #fff;
+}
+
+#two {
+	background-color: #95a5a6;
+}
+#two a {
+	color: #fff;
+}
+
+#three {
+	background-color: #2ecc71;
+}
+#three a {
+	color: #fff;
+}
+
+#four {
+	background-color: #9b59b6;
+}
+#four a {
+	color: #fff;
+}
+
+#five {
+	background-color: #e74c3c;;
+}
+#five a {
+	color: #fff;
+}
+
+#six {
+	background-color: #bdc3c7;
+}
+#six a {
+	color: #fff;
+}
+
+#seven {
+	background-color: #3498db;
+}
+#seven a {
+	color: #fff;
+}
+
+#squeeze {
+	background-color: #2c3e50;
+}
+#squeeze a {
+	color: #fff;
+}

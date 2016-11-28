@@ -1,0 +1,89 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ching Casanova Tapia</title>
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/hoc.css" rel="stylesheet">
+<link href='https://fonts.googleapis.com/css?family=Oswald:300,700|Montserrat' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div id="top" class="full">
+	<a href="#two">
+		<h1>hi e</h1>
+		<p class="slide-left next">click the emoji</p>
+		<img src="images/wave.png" class="emoji">
+	</a>
+
+</div>
+
+<div id="two" class="full">
+	<a href="#three">
+		<h1>so...</h1>
+		<img src="images/hmm.png" class="emoji">
+	</a>
+</div>
+
+<div id="three" class="full">
+	<a href="#four">
+		<h1>i want to say</h1>
+		<img src="images/ok.png" class="emoji">
+	</a>
+</div>
+
+<div id="four" class="full">
+	<a href="#squeeze">
+		<h1>thank you</h1>
+		<img src="images/tongue1.png" class="emoji">
+	</a>
+</div>
+
+<div id="squeeze" class="full">
+	<a href="#five">
+		<h1>for</h1>
+		<img src="images/tongue2.png" class="emoji">
+	</a>
+</div>
+
+<div id="five" class="full">
+	<a href="#six">
+		<h1>my bday present</h1>
+		<img src="images/clown.png" class="emoji">
+	</a>
+</div>
+
+<div id="six" class="full">
+	<a href="#seven">
+		<h1>i love it</h1>
+		<img src="images/heart-eyes.png" class="emoji">
+	</a>
+</div>
+
+<div id="seven" class="full">
+	<a href="#eight"><h1>see you tonight</h1></a>
+	<img src="images/tongue-out.png" class="emoji">
+</div>
+
+
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/jquery.fadethis.js"></script>
+
+<script>
+$(window).fadeThis({speed: 1500});
+</script>
+
+<script>
+  $('a').click(function(){
+      $('html, body').animate({
+          scrollTop: $( $(this).attr('href') ).offset().top
+      }, 500);
+      return false;
+  });
+</script>
+
+</body>
+</html>
