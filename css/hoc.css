@@ -10,13 +10,20 @@ h1   { font-size: 100px; font-size: 10.0rem; }
 .oswald { text-transform: uppercase; font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 48px; font-size: 4.8rem; }
 
 
+a {
+	color: #fff;
+}
 
 a:hover,
 a:focus,
 a:active,
 a.active {
-  color: #ccc;
+  color: #eee;
   text-decoration: none;
+}
+
+a .dark {
+	color: #7f8c8d;
 }
 
 .emoji {
@@ -24,6 +31,11 @@ a.active {
 	height: auto;
 	display: block;
 	margin: auto;
+}
+
+.emoji-sm {
+	width: 30%;
+	height: auto;
 }
 
 .full {
@@ -35,58 +47,30 @@ a.active {
 	margin-top: 20px;
 }
 
-#top {
-	background-color: #8e44ad;
-}
-#top a {
-	color: #fff;
-}
-
-#two {
-	background-color: #95a5a6;
-}
-#two a {
-	color: #fff;
-}
-
-#three {
+.green {
 	background-color: #2ecc71;
 }
-#three a {
-	color: #fff;
-}
 
-#four {
+.purple {
 	background-color: #9b59b6;
 }
-#four a {
-	color: #fff;
-}
 
-#five {
-	background-color: #e74c3c;;
-}
-#five a {
-	color: #fff;
-}
-
-#six {
-	background-color: #bdc3c7;
-}
-#six a {
-	color: #fff;
-}
-
-#seven {
+.blue {
 	background-color: #3498db;
 }
-#seven a {
-	color: #fff;
+
+.yellow {
+	background-color: #f1c40f;
 }
 
-#squeeze {
-	background-color: #2c3e50;
+.red {
+	background-color: #e74c3c;
 }
-#squeeze a {
-	color: #fff;
+
+.silver {
+	background-color: #bdc3c7;
+}
+
+.gray {
+	background-color: #7f8c8d;
 }
